@@ -11,10 +11,11 @@ const rows=Math.floor(board.clientHeight/blockHeight);
     board.appendChild(block);
 }*/
 
-for(let i =0; i<rows;i++){
-    for(let j=0;j<cols;j++){
+for(let i =0; i<rows; i++){
+    for(let j=0; j<cols; j++){
         const block = document.createElement('div');
-    block.classList.add("block")
-    board.appendChild(block);
+        block.classList.add("block")
+        board.appendChild(block);
+        block.innerText=`${i}-${j}`;
     }
 }
