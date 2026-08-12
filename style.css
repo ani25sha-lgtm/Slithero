@@ -11,6 +11,7 @@ body {
 :root{
     /* background colour */
     --bg-primary-colour: rgb(22, 22, 22);
+    --bg-fill-color: rgb(204, 152, 152);
 
     /* text colour */
     --text-primary-colour: rgb(227, 227, 227);
@@ -51,11 +52,14 @@ section .infos{
     border: 1.5px solid var(--border-colour);
     flex-grow: 1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px,1fr));
-    grid-template-rows: repeat(auto-fill, minmax(80px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px,1fr));
 }
 .block{
     /*width: 30px;
     height: 30px;*/
     border: 1px solid var(--border-colour);
+}
+.fill{
+    background-color: var(--bg-fill-color);
 }
